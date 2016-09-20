@@ -12,7 +12,7 @@ import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
     private WebView mywebview;
-    private String url1 = "http://www.ilhamnoviansyah.tk";
+    private String url1 = "http://www.e-ckp.tk";
     private ProgressBar progressBar;
 
 
@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
             super.onPageStarted(view, url, favicon);
             progressBar = (ProgressBar)findViewById(R.id.progressBar);
             progressBar.setVisibility(View.VISIBLE);
+            mywebview.setVisibility(View.INVISIBLE);
         }
 
         @Override
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
             super.onPageFinished(view, url);
 
             progressBar.setVisibility(View.GONE);
+            mywebview.setVisibility(View.VISIBLE);
 
         }
     }
