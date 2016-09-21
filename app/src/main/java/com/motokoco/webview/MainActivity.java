@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
+import android.webkit.CookieManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.ProgressBar;
@@ -60,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             mywebview.setVisibility(View.VISIBLE);
 
         }
+
     }
 
 
